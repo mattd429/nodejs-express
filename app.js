@@ -20,6 +20,7 @@ app.set('views engine', 'pug')
 
 // add the middleware libraries 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev')); //log
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use.(cookieParser());
@@ -46,4 +47,7 @@ app.use(function(err, req, res, next) {
 	res.status(err.status || 500);
 	res.render('error');
 });
+
+// allow app to be import to /bin/www
+module.exports = app;
 
