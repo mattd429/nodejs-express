@@ -66,3 +66,23 @@ function genreCreate(name, album, genre, cb) {
         cb(null, genre);
     }   );
 }
+function albumCreate(title, artist, summary, isni, genre, cb) {
+    albumdetail = {
+      title: title,
+      artist: artist,
+      summary: summary,
+      isni: isni
+    }
+    if (genre != false) albumdetail.genre = genre
+    
+    var album = new Album(albumdetail);
+    album.save(function (err) {
+        if (err) {
+            cb(err, null)
+            return
+        }
+        console.log('New Album: ' + album);
+        albums.push(album)
+        cb(null, album)
+    }     );
+}
