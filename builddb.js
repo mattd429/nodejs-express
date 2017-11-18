@@ -10,7 +10,7 @@ if (!uArgs[0].startsWith('mongoDB://')) {
 }
 //import models && async
 var async = require('async')
-var Album = require('./models/book')
+var Album = require('./models/album')
 var Artist = require('./models/artist')
 var Genre = require('./models/genre')
 var Track = require('./models/track')
