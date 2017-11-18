@@ -27,3 +27,23 @@ var artists = []
 var genres = []
 var albums = []
 var tracks = []
+
+// create artist || error
+function artistCreate(first_name, last_name, s_name, d_birth, d_death, cb) {
+    artistdetail = {first_name:first_name, last_name: last_name }
+    if (s_name != false) artistdetail.stage_name = s_name
+    if (d_birth != false) artistdetail.date_of_birth = d_birth
+    if (d_death != false) artistdetail.date_of_death = d_death
+    
+    var artist = new Artist(artistdetail);
+    
+    artist.save(function (err) {
+        if (err) {
+            cd(err, null)
+            return
+        }
+        console.log('New Artist: ' + artist);
+        artists.push(artist)
+        cb(null, artist)
+    }   );
+}
