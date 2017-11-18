@@ -47,6 +47,7 @@ function artistCreate(first_name, last_name, s_name, d_birth, d_death, cb) {
     cb(null, artist)
   }   );
 }
+// Create genre || error
 function genreCreate(name, album, genre, cb) {
   genredetail = {
     name: name,
@@ -66,6 +67,7 @@ function genreCreate(name, album, genre, cb) {
     cb(null, genre);
   }   );
 }
+// Create album || error
 function albumCreate(title, artist, summary, isni, genre, cb) {
   albumdetail = {
     title: title,
