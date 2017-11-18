@@ -30,59 +30,59 @@ var tracks = []
 
 // create artist || error
 function artistCreate(first_name, last_name, s_name, d_birth, d_death, cb) {
-    artistdetail = {first_name:first_name, last_name: last_name }
-    if (s_name != false) artistdetail.stage_name = s_name
-    if (d_birth != false) artistdetail.date_of_birth = d_birth
-    if (d_death != false) artistdetail.date_of_death = d_death
+  artistdetail = {first_name:first_name, last_name: last_name }
+  if (s_name != false) artistdetail.stage_name = s_name
+  if (d_birth != false) artistdetail.date_of_birth = d_birth
+  if (d_death != false) artistdetail.date_of_death = d_death
     
-    var artist = new Artist(artistdetail);
+  var artist = new Artist(artistdetail);
     
-    artist.save(function (err) {
-        if (err) {
-            cd(err, null)
-            return
-        }
-        console.log('New Artist: ' + artist);
-        artists.push(artist)
-        cb(null, artist)
-    }   );
+  artist.save(function (err) {
+    if (err) {
+       cb(err, null)
+       return
+    }
+    console.log('New Artist: ' + artist);
+    artists.push(artist)
+    cb(null, artist)
+  }   );
 }
 function genreCreate(name, album, genre, cb) {
-    genredetail = {
-      name: name,
-      genre: genre
+  genredetail = {
+    name: name,
+    genre: genre
+  }
+  if (album != false) genredetail.album = album
+    
+  var genre = new Genre(genredetail);
+    
+  genre.save(function (err) {
+    if (err) {
+      cb(err, null);
+       return;
     }
-    if (album != false) genredetail.album = album
-    
-    var genre = new Genre(genredetail);
-    
-    genre.save(function (err) {
-        if (err) {
-            cb(err, null);
-            return;
-        }
-        console.log('New Genre: ' + genre);
-        genres.push(genre)
-        cb(null, genre);
-    }   );
+    console.log('New Genre: ' + genre);
+    genres.push(genre)
+    cb(null, genre);
+  }   );
 }
 function albumCreate(title, artist, summary, isni, genre, cb) {
-    albumdetail = {
-      title: title,
-      artist: artist,
-      summary: summary,
-      isni: isni
-    }
-    if (genre != false) albumdetail.genre = genre
+  albumdetail = {
+    title: title,
+    artist: artist,
+    summary: summary,
+    isni: isni
+  }
+  if (genre != false) albumdetail.genre = genre
     
-    var album = new Album(albumdetail);
-    album.save(function (err) {
-        if (err) {
-            cb(err, null)
-            return
-        }
-        console.log('New Album: ' + album);
-        albums.push(album)
-        cb(null, album)
-    }     );
+  var album = new Album(albumdetail);
+  album.save(function (err) {
+    if (err) {
+        cb(err, null)
+        return
+    }
+    console.log('New Album: ' + album);
+    albums.push(album)
+    cb(null, album)
+  }   );
 }
