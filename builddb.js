@@ -47,3 +47,22 @@ function artistCreate(first_name, last_name, s_name, d_birth, d_death, cb) {
         cb(null, artist)
     }   );
 }
+function genreCreate(name, album, genre, cb) {
+    genredetail = {
+      name: name,
+      genre: genre
+    }
+    if (album != false) genredetail.album = album
+    
+    var genre = new Genre(genredetail);
+    
+    genre.save(function (err) {
+        if (err) {
+            cb(err, null);
+            return;
+        }
+        console.log('New Genre: ' + genre);
+        genres.push(genre)
+        cb(null, genre);
+    }   );
+}
