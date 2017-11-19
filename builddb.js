@@ -88,3 +88,16 @@ function albumCreate(title, artist, summary, isni, genre, cb) {
     cb(null, album)
   }   );
 }
+
+function trackCreate(name, album, track_number, cb) {
+  trackdetail = {
+    name: name,
+    album: album
+  }
+  if (track_number != false) trackdetail.track_number = track_number
+    
+  var track = new Track(trackdetail);
+  track.save(function (err) {
+    if (err) {}
+  })
+}
