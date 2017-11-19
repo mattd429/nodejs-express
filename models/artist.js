@@ -1,5 +1,5 @@
 // import mongoose
-var mongoose = required('mongoose');
+var mongoose = require('mongoose');
 
 // create Schema
 var Schema = mongoose.Schema;
