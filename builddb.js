@@ -88,7 +88,7 @@ function albumCreate(title, artist, summary, isni, genre, cb) {
     cb(null, album)
   }   );
 }
-
+// Create Track || err
 function trackCreate(name, album, track_number, cb) {
   trackdetail = {
     name: name,
@@ -98,6 +98,13 @@ function trackCreate(name, album, track_number, cb) {
     
   var track = new Track(trackdetail);
   track.save(function (err) {
-    if (err) {}
-  })
+    if (err) {
+      console.log('ERROR CREATING track:' + track);
+      cb(err, null)
+      return
+    }
+    console.log('New Track:' + track);
+    tracks.push(track)
+    cb(null, track)
+  }   );
 }
