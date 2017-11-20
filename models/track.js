@@ -5,6 +5,7 @@ var Schema = mongoose.Schema;
 var TrackSchema = new Schema({
   name: = { type: String, required: true},
   album: {type: Schema.ObjectId, ref: 'Album', required: true},
+  rating: {type: Number, required: true, enum:[1, 2, 3, 4, 5], default: 3},
   track_number: {type: Number, max: 3},
 });
 
