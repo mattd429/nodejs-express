@@ -84,10 +84,11 @@ function albumCreate(title, artist, summary, barcode, genre, cb) {
   }   );
 }
 // Create Track || err
-function trackCreate(name, album, track_number, cb) {
+function trackCreate(name, album, rating, track_number, cb) {
   trackdetail = {
     name: name,
     album: album
+    rating: rating
   }
   if (track_number != false) trackdetail.track_number = track_number
     
@@ -167,7 +168,7 @@ function createAlbum(cb) {
 function createTrack(cb) {
     async.parallel([
         function(callback) {
-          trackCreate(albums[0], )
+          trackCreate('Just Dance', albums[0], 4, 1, callback)
         },
     ])
 }
