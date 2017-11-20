@@ -48,25 +48,20 @@ function artistCreate(first_name, last_name, s_name, d_birth, d_death, cb) {
   }   );
 }
 // Create genre || error
-function genreCreate(name, album, genre, cb) {
-  genredetail = {
-    name: name,
-    genre: genre
-  }
-  if (album != false) genredetail.album = album
-    
-  var genre = new Genre(genredetail);
-    
+function genreCreate(name, cb) {
+  var genre = new Genre({ name: name });
+
   genre.save(function (err) {
     if (err) {
       cb(err, null);
-       return;
+      return;
     }
     console.log('New Genre: ' + genre);
     genres.push(genre)
     cb(null, genre);
   }   );
 }
+
 // Create album || error
 function albumCreate(title, artist, summary, isni, genre, cb) {
   albumdetail = {
