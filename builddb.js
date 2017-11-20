@@ -142,5 +142,9 @@ function createAlbum(cb) {
           albumCreate('The Fame', artists[0], 'Is the debut studio album by American singer Lady Gaga. It was released on August 19, 2008, by Interscope Records. After joining Kon Live Distribution and Cherrytree Records in 2008, Gaga began working on the album with different producers, primarily RedOne, Martin Kierszenbaum and Rob Fusari. Musically, The Fame is an electropop, synth-pop, and dance-pop album that has displays from music from the 1980s',
           '602517664890', [genres[0],], callback);
         },
+        function(callback) {
+          albumCreate('Joanne', artists[0], 'is the fifth studio album by American singer Lady Gaga. It was released on October 21, 2016, by Streamline and Interscope Records. Gaga collaborated with several producers on the album, including Mark Ronson, Jeff Bhasker, BloodPop and RedOne, and co-produced the majority of the material. The music of Joanne features "stripped-down" soft rock and dance-pop styles in order to emphasize the singer\'s vocal abilities'
+          '602557186437', [genres[0],], callback);
+        },
     ])
 }
