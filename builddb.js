@@ -103,3 +103,21 @@ function trackCreate(name, album, track_number, cb) {
     cb(null, track)
   }   );
 }
+// want to print in order...
+function createGenreArtists(cb) {
+  async.parallel([
+      function(callback) {
+        artistCreate('Lady', 'Gaga', '1986-03-28', false, callback);
+      },
+      function(callback) {
+        artistCreate('Kanye', 'West', '1977-06-08', false, callback);
+      },
+      function(callback) {
+        artistCreate('John', 'Coltrane', '1926-09-23', '967-07-17', callback);
+      },
+      function(callback) {
+        artistCreate('John', 'Legend', '1978-12-28', false, callback);
+      },
+      
+  ])
+}
