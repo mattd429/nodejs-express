@@ -67,9 +67,9 @@ function albumCreate(title, artist, summary, barcode, genre, cb) {
   albumdetail = {
     title: title,
     artist: artist,
-    summary: summary,
-    barcode: barcode
+    summary: summary
   }
+  if (barcode != false) albumdetail.barcode = barcode
   if (genre != false) albumdetail.genre = genre
     
   var album = new Album(albumdetail);
@@ -145,6 +145,10 @@ function createAlbum(cb) {
         function(callback) {
           albumCreate('Joanne', artists[0], 'is the fifth studio album by American singer Lady Gaga. It was released on October 21, 2016, by Streamline and Interscope Records. Gaga collaborated with several producers on the album, including Mark Ronson, Jeff Bhasker, BloodPop and RedOne, and co-produced the majority of the material. The music of Joanne features "stripped-down" soft rock and dance-pop styles in order to emphasize the singer\'s vocal abilities'
           '602557186437', [genres[0],], callback);
+        },
+        function(callback) {
+          albumCreate('The Life od Pablo', artists[1], 'is the seventh solo studio album by American rapper Kanye West (eighth overall). It was released on February 14, 2016, by GOOD Music and Def Jam Recordings. Recording sessions took place from 2013 to 2016, in Italy, Mexico, Canada and the United States.'
+          false, [genres[1],], callback)
         },
     ])
 }
