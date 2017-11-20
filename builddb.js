@@ -158,5 +158,16 @@ function createAlbum(cb) {
           albumCreate('Darkness and Light', artists[3], 'is the fifth studio album by American singer John Legend. The album was released on December 2, 2016 by GOOD Music and Columbia Records. It was produced by Blake Mills and features guest appearances from Chance the Rapper, Brittany Howard, and Miguel. The album is supported by two singles "Love Me Now", and "Penthouse Floor" featuring Chance the Rapper.'
           '889853795321', [genres[3],], callback);
         },
+        ]
+        // optional callback               
+        cb);
+}
+
+
+function createTrack(cb) {
+    async.parallel([
+        function(callback) {
+          trackCreate(albums[0], )
+        },
     ])
 }
