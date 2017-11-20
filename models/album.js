@@ -7,7 +7,7 @@ var AlbumSchema = new Schema({
   title: {type: String, required: true},
   artist: {type: Schema.ObjectId, ref: 'Artist', required: true},
   summary: {type: String, required: true},
-  isni: {type: Number, required: true, max: 16},
+  barcode: {type: Number, required: true, max: 12},
   genre: [{type: Schema.ObjectId, ref: 'Genre'}] //Not created yet
 });
 
