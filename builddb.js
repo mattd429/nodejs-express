@@ -63,12 +63,12 @@ function genreCreate(name, cb) {
 }
 
 // Create album || error
-function albumCreate(title, artist, summary, isni, genre, cb) {
+function albumCreate(title, artist, summary, barcode, genre, cb) {
   albumdetail = {
     title: title,
     artist: artist,
     summary: summary,
-    isni: isni
+    barcode: barcode
   }
   if (genre != false) albumdetail.genre = genre
     
@@ -118,6 +118,29 @@ function createGenreArtists(cb) {
       function(callback) {
         artistCreate('John', 'Legend', '1978-12-28', false, callback);
       },
-      
-  ])
+      function(callback) {
+        genreCreate("electropop", callback);
+      },
+      function(callback) {
+        genreCreate("hip hop", callback);
+      },
+      function(callback) {
+        genreCreate("jazz", callback);
+      },
+      function(callback) {
+        genreCreate("soul", callback);
+      },   
+    ],
+    // optional callback
+    cb);
+}
+
+
+function createAlbum(cb) {
+    async.parallel([
+        function(callback) {
+          albumCreate('The Fame', artists[0], 'Is the debut studio album by American singer Lady Gaga. It was released on August 19, 2008, by Interscope Records. After joining Kon Live Distribution and Cherrytree Records in 2008, Gaga began working on the album with different producers, primarily RedOne, Martin Kierszenbaum and Rob Fusari. Musically, The Fame is an electropop, synth-pop, and dance-pop album that has displays from music from the 1980s',
+          '602517664890', [genres[0],], callback);
+        },
+    ])
 }
