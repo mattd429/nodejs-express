@@ -150,5 +150,13 @@ function createAlbum(cb) {
           albumCreate('The Life od Pablo', artists[1], 'is the seventh solo studio album by American rapper Kanye West (eighth overall). It was released on February 14, 2016, by GOOD Music and Def Jam Recordings. Recording sessions took place from 2013 to 2016, in Italy, Mexico, Canada and the United States.'
           false, [genres[1],], callback)
         },
+        function(callback) {
+          albumCreate('Giant Steps', artists[2], 'is the fifth studio album by jazz musician John Coltrane as leader, released in 1960 on Atlantic Records, catalogue SD 1311. His first album for his new label Atlantic, it is the breakthrough album for Coltrane as a leader, and many of its tracks have become practice templates for jazz saxophonists. In 2004, it was one of fifty recordings chosen that year by the Library of Congress to be added to the National Recording Registry.'
+          '075678133725', [genres[2],], callback);
+        },
+        function(callback) {
+          albumCreate('Darkness and Light', artists[3], 'is the fifth studio album by American singer John Legend. The album was released on December 2, 2016 by GOOD Music and Columbia Records. It was produced by Blake Mills and features guest appearances from Chance the Rapper, Brittany Howard, and Miguel. The album is supported by two singles "Love Me Now", and "Penthouse Floor" featuring Chance the Rapper.'
+          '889853795321', [genres[3],], callback);
+        },
     ])
 }
