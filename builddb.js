@@ -170,5 +170,8 @@ function createTrack(cb) {
         function(callback) {
           trackCreate('Just Dance', albums[0], 4, 1, callback)
         },
+        function(callback) {
+          trackCreate('Million Reasons', album[1], false, 7, callback)
+        },
     ])
 }
