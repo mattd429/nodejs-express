@@ -113,7 +113,7 @@ function createGenreArtists(cb) {
         artistCreate('Kanye', 'West', '1977-06-08', false, callback);
       },
       function(callback) {
-        artistCreate('John', 'Coltrane', '1926-09-23', '967-07-17', callback);
+        artistCreate('John', 'Coltrane', '1926-09-23', '1967-07-17', callback);
       },
       function(callback) {
         artistCreate('John', 'Legend', '1978-12-28', false, callback);
