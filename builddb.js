@@ -103,7 +103,7 @@ function trackCreate(name, album, track_number, cb) {
     cb(null, track)
   }   );
 }
-// want to print in order...
+// Print in order...
 function createGenreArtists(cb) {
   async.parallel([
       function(callback) {
