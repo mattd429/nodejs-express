@@ -137,7 +137,7 @@ function createGenreArtists(cb) {
 }
 
 
-function createAlbum(cb) {
+function createAlbums(cb) {
     async.parallel([
         function(callback) {
           albumCreate('The Fame', artists[0], 'Is the debut studio album by American singer Lady Gaga. It was released on August 19, 2008, by Interscope Records. After joining Kon Live Distribution and Cherrytree Records in 2008, Gaga began working on the album with different producers, primarily RedOne, Martin Kierszenbaum and Rob Fusari. Musically, The Fame is an electropop, synth-pop, and dance-pop album that has displays from music from the 1980s',
@@ -165,7 +165,7 @@ function createAlbum(cb) {
 }
 
 
-function createTrack(cb) {
+function createTracks(cb) {
     async.parallel([
         function(callback) {
           trackCreate('Just Dance', albums[0], 4, 1, callback)
@@ -204,5 +204,18 @@ function createTrack(cb) {
 
 // Run a series of cb in sequence, simply as possible.
 async.series([
-
-])
+    createGenreArtists,
+    createAlbums,
+    createTracks
+],
+// optional callback
+function(err, results) {
+    if (err) {
+      console.log('FINAL ERR: '+err);
+    }
+    else {
+        console.log('TRACK: '+track);
+    }
+    // All done, disconnect from database
+    mongoose.connection.close()
+});
