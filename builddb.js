@@ -176,5 +176,9 @@ function createTrack(cb) {
         function(callback) {
           trackCreate('Famous', album[2], 3, 4, callback)
         },
+        function(callback) {
+          trackCreate('Father Stretch My Hands, Pt. 1', album[2], 3, 2, callback)
+        },
+        
     ])
 }
