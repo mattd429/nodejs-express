@@ -173,5 +173,8 @@ function createTrack(cb) {
         function(callback) {
           trackCreate('Million Reasons', album[1], false, 7, callback)
         },
+        function(callback) {
+          trackCreate('Famous', album[2], 3, 4, callback)
+        },
     ])
 }
