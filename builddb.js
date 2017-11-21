@@ -189,7 +189,7 @@ function createTrack(cb) {
           trackCreate('Countdown', album[3], 3, false, callback)
         },
         function(callback) {
-         
+          trackCreate('Sprial', album[3], 4, false, callback)
         },
         
     ])
