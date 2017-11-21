@@ -191,6 +191,12 @@ function createTrack(cb) {
         function(callback) {
           trackCreate('Sprial', album[3], 4, false, callback)
         },
+        function(callback) {
+          trackCreate('I Know Better', album[4], 1, false, callback)
+        },
+        function(callback) {
+          trackCreate('Love Me Now', album[4], 5, false, callback)
+        },
         
     ])
 }
