@@ -148,7 +148,7 @@ function createAlbum(cb) {
           '602557186437', [genres[0],], callback);
         },
         function(callback) {
-          albumCreate('The Life od Pablo', artists[1], 'is the seventh solo studio album by American rapper Kanye West (eighth overall). It was released on February 14, 2016, by GOOD Music and Def Jam Recordings. Recording sessions took place from 2013 to 2016, in Italy, Mexico, Canada and the United States.'
+          albumCreate('The Life of Pablo', artists[1], 'is the seventh solo studio album by American rapper Kanye West (eighth overall). It was released on February 14, 2016, by GOOD Music and Def Jam Recordings. Recording sessions took place from 2013 to 2016, in Italy, Mexico, Canada and the United States.'
           false, [genres[1],], callback)
         },
         function(callback) {
@@ -181,6 +181,15 @@ function createTrack(cb) {
         },
         function(callback) {
           trackCreate('Low Lights', album[2], 6, 1, callback)
+        },
+        function(callback) {
+          trackCreate('Giant Steps', album[3], 1, false, callback)
+        },
+        function(callback) {
+          trackCreate('Countdown', album[3], 3, false, callback)
+        },
+        function(callback) {
+         
         },
         
     ])
