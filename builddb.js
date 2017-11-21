@@ -197,6 +197,12 @@ function createTrack(cb) {
         function(callback) {
           trackCreate('Love Me Now', album[4], 5, false, callback)
         },
-        
-    ])
+        ],
+        // optional callback
+        cb);
 }
+
+// Run a series of cb in sequence, simply as possible.
+async.series([
+
+])
