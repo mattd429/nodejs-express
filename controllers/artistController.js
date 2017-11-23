@@ -11,13 +11,17 @@ exports.artist_detail = function(req, res) {
 };
 
 // Display Artist create form on GET
-exports.artist_detail_get = function(req, res) {
-    res.send('NOT IMPLEMENTED: Artist detail GET');
+exports.artist_create_get = function(req, res) {
+    res.send('NOT IMPLEMENTED: Artist create GET');
 };
 
 // Handle Artist create on POST
-exports.artist_detail_post = function(req, res) {
-    res.send('NOT IMPLEMENTED: Artist detail POST');
+exports.artist_create_post = function(req, res) {
+    res.send('NOT IMPLEMENTED: Artist create POST');
 };
 
+// Display Artist delete form on GET
+exports.artist_delete_get = function(req, res) {
+    res.send('NOT IMPLEMENTED: Artist delete GET')
+};
 
