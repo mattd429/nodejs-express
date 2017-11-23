@@ -34,3 +34,8 @@ exports.artist_delete_post = function(req, res) {
 exports.artist_update_get = function(req, res) {
     res.send('NOT IMPLEMENTED: Artist update GET')
 };
+
+// Handle Artist update on POST
+exports.artist_update_post = function(req, res) {
+    res.send('NOT IMPLEMENTED: Artist update POST')
+};
