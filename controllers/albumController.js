@@ -28,3 +28,8 @@ exports.book_create_post = function(req, res) {
 exports.book_delete_get = function(req, res) {
     res.send('NOT IMPLEMENTED: album create GET');
 };
+
+// Handle album delete on POST
+exports.book_delete_post = function(req, res) {
+    res.send('NOT IMPLEMENTED: album create POST');
+};
