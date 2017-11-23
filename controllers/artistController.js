@@ -25,3 +25,7 @@ exports.artist_delete_get = function(req, res) {
     res.send('NOT IMPLEMENTED: Artist delete GET')
 };
 
+// Display Artist update form on GET
+exports.artist_update_get = function(req, res) {
+    res.send('NOT IMPLEMENTED: Artist update GET')
+};
