@@ -17,5 +17,7 @@ exports.artist_detail_get = function(req, res) {
 
 // Handle Artist create on POST
 exports.artist_detail_post = function(req, res) {
-
+    res.send('NOT IMPLEMENTED: Artist detail POST');
 };
+
+
