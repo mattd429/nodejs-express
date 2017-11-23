@@ -15,4 +15,6 @@ exports.book_detail = function(req, res) {
 };
 
 // Display album create form on GET
-exports.
+exports.book_create_get = function(req, res) {
+    res.send('NOT IMPLEMENTED: album create GET');
+};
