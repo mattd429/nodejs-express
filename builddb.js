@@ -20,7 +20,7 @@ var mongoose = require('mongoose');
 var mongoDB = uArgs[0];
 mongoose.connect(mongoDB);
 var db = mongoose.connection;
-mongoose.connection.on('error', console.error.bing(console, 'MongoDB connection error:'));
+mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // arrays
 var artists = []
