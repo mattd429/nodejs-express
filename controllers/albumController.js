@@ -9,27 +9,37 @@ exports.album_list = function(req, res) {
     res.send('NOT IMPLEMENTED: album list');
 };
 
-// Display detail page for a specific book
-exports.book_detail = function(req, res) {
+// Display detail page for a specific album
+exports.album_detail = function(req, res) {
      res.send('NOT IMPLEMENTED: album detail: ' + req.params.id);
 };
 
 // Display album create form on GET
-exports.book_create_get = function(req, res) {
+exports.album_create_get = function(req, res) {
     res.send('NOT IMPLEMENTED: album create GET');
 };
 
 // Handle album create on POST
-exports.book_create_post = function(req, res) {
+exports.album_create_post = function(req, res) {
     res.send('NOT IMPLEMENTED: album create POST');
 };
 
 // Display album delete form on GET
-exports.book_delete_get = function(req, res) {
-    res.send('NOT IMPLEMENTED: album create GET');
+exports.album_delete_get = function(req, res) {
+    res.send('NOT IMPLEMENTED: album delete GET');
 };
 
 // Handle album delete on POST
-exports.book_delete_post = function(req, res) {
-    res.send('NOT IMPLEMENTED: album create POST');
+exports.album_delete_post = function(req, res) {
+    res.send('NOT IMPLEMENTED: album delete POST');
+};
+
+// Display album update form on GET
+exports.album_update_get = function(req, res) {
+    res.send('NOT IMPLEMENTED: album update GET');
+};
+
+// Handle album update on POST
+exports.album_update_post = function(req, res) {
+    res.send('NOT IMPLEMENTED: album update POST');
 };
