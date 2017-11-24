@@ -25,4 +25,7 @@ exports.genre_delete_get = function(req, res) {
     res.send('NOT IMPLEMENTED: Genre delete GET');
 };
 
-// 
+// Handle Genre delete on POST
+exports.genre_delete_post = function(req, res) {
+    res.send('NOT IMPLEMENTED: genre delete POST');
+};
