@@ -29,3 +29,10 @@ exports.genre_delete_get = function(req, res) {
 exports.genre_delete_post = function(req, res) {
     res.send('NOT IMPLEMENTED: genre delete POST');
 };
+
+// Display Genre update form on GET
+exports.genre_update_get = function(req, res) {
+    res.send('NOT IMPLEMENTED: genre update GET');
+};
+
+//
