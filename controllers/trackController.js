@@ -5,3 +5,10 @@ var Track = require('../models/track');
 exports.tracks_list = function(req, res) {
     res.send('NOT IMPLEMENTED: Track list');
 };
+
+// Display detail page for a specific Track
+exports.track_detail = function(req, res) {
+    res.send('NOT IMPLEMENTED: Track detail: ' + req.params.id);
+};
+
+
