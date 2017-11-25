@@ -37,5 +37,5 @@ exports.genre_update_get = function(req, res) {
 
 // Handle genre update on POST
 exports.genre_update_post = function(req, res) {
-    res.send('NOT IMPLEMENTED: genre update POST);
+    res.send('NOT IMPLEMENTED: genre update POST');
 };
