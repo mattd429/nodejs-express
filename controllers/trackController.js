@@ -31,4 +31,11 @@ exports.track_delete_post = function(req, res) {
     res.send('NOT IMPLEMENTED: Track delete POST');
 };
 
+// Display Track update on GET
+exports.track_update_get = function(req, res) {
+    res.send('NOT IMPLEMENTED: Track update GET');
+};
+
+// Handle Track update on POST
+
 
