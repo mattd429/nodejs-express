@@ -71,16 +71,16 @@ router.get('/genre/create', genre_controller.genre_create_get);
 router.post('/genre/create', genre_controller.genre_create_post);
 
 /* GET request for deleting Genre. */
-router.get('/genre/delete', genre_controller.genre_delete_get);
+router.get('/genre/:id/delete', genre_controller.genre_delete_get);
 
 /* POST request for deleting Genre. */
-router.post('/genre/delete', genre_controller.genre_delete_post);
+router.post('/genre/:id/delete', genre_controller.genre_delete_post);
 
 /* GET request for updaing Genre. */
-router.get('/genre/update', genre_controller.genre_update_get);
+router.get('/genre/:id/update', genre_controller.genre_update_get);
 
 /* POST request for updaing Genre. */
-router.post('/genre/update', genre_controller.genre_update_post);
+router.post('/genre/:id/update', genre_controller.genre_update_post);
 
 
 
