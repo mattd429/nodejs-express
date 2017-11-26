@@ -79,6 +79,8 @@ router.post('/genre/delete', genre_controller.genre_delete_post);
 /* GET request for updaing Genre. */
 router.get('/genre/update', genre_controller.genre_update_get);
 
+/* POST request for updaing Genre. */
+router.post('/genre/update', genre_controller.genre_update_post);
 
 
 
