@@ -17,3 +17,7 @@ router.get('/album/create', album_controller.album_create_get);
 
 /* POST request for creating album. */
 router.post('/album/create', album_controller.album_create_post);
+
+/* GET request to delete Album. */
+router.get('/album/delete', album_controller.album_delete_post);
+
