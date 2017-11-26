@@ -62,3 +62,9 @@ router.get('/artist/:id', artist_controller.artist_detail);
 /* GET requqets for list of all Artists. */
 router.get('/artists', artist_controller.artist_list);
 
+/// GENRE ROUTES ///
+
+/* GET request for creating a Genre. NOTE This must come before routes that displays GENRE (uses ID) */
+router.get('/genre/create', genre_controller.genre_create_get);
+
+
