@@ -105,3 +105,6 @@ router.post('/track/:id/delete', track_controller.track_delete_post);
 /* GET request for updating Track. */
 router.get('/track/:id/update', track_controller.track_update_get);
 
+/* POST request for updating Track. */
+router.post('/track/:id/update', track_controller.track_update_post);
+
