@@ -26,3 +26,6 @@ router.post('/album/:id/delete', album_controller.album_delete_post);
 
 /* GET request to update Album. */
 router.get('/album/:id/update', album_controller.album_update_get);
+
+/* POST request to update Album. */
+router.post('/album/:id/update', album_controller.album_update_post);
