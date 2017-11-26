@@ -93,5 +93,9 @@ router.get('/genres', genre_controller.genre_list);
 /* GET request for creating Track. Note this must come before routes that display Track (uses ID). */
 router.get('/track/create', track_controller.track_create_get);
 
+/* POST request for creating Track. */
+router.post('/track/create', track_controller.track_create_post);
+
+
 
 
