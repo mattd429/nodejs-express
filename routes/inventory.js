@@ -82,5 +82,8 @@ router.get('/genre/:id/update', genre_controller.genre_update_get);
 /* POST request for updaing Genre. */
 router.post('/genre/:id/update', genre_controller.genre_update_post);
 
+/* GET request for one Genre. */
+router.get('/genre/:id', genre_controller.genre_detail);
+
 
 
