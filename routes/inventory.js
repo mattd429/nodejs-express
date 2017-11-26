@@ -108,3 +108,6 @@ router.get('/track/:id/update', track_controller.track_update_get);
 /* POST request for updating Track. */
 router.post('/track/:id/update', track_controller.track_update_post);
 
+/* GET request for one TRACK. */
+router.get('/track/:id'. track_controller.track_detail);
+
