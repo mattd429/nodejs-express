@@ -99,5 +99,8 @@ router.post('/track/create', track_controller.track_create_post);
 /* GET request for deleting Track. */
 router.get('/track/:id/delete', track_controller.track_delete_get);
 
+/* POST request for deleting Track. */
+router.post('/track/:id/delete', track_controller.track_delete_post);
+
 
 
