@@ -56,3 +56,6 @@ router.get('/artist/:id/update', artist_controller.artist_update_get);
 /* POST request for updating Artist. */
 router.post('/artist/:id/update', artist_controller.artist_update_post);
 
+/* GET request for one Artist. */
+router.get('/artist/:id', artist_controller.artist_detail);
+
