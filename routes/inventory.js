@@ -74,6 +74,6 @@ router.post('/genre/create', genre_controller.genre_create_post);
 router.get('/genre/delete', genre_controller.genre_delete_get);
 
 /* POST request for deleting Genre. */
-router.post
+router.post('/genre/delete', )
 
 
