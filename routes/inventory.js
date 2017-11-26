@@ -42,5 +42,5 @@ router.get('/albums', album_contoller.album_list);
 router.get('/artist/create', artist_controller.artist_create_get);
 
 /* POST request for creating Artist. */
-router.post('/artist/create', artist_controller.artist_create_)
+router.post('/artist/create', artist_controller.artist_create_post);
 
