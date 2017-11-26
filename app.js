@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 // adding routes
 var index = require('./routes/index');
 var index = require('./routes/users');
+var index = require('./routes/inventory');
 
 // import express 
 var app = express();
