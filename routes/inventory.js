@@ -67,4 +67,7 @@ router.get('/artists', artist_controller.artist_list);
 /* GET request for creating a Genre. NOTE This must come before routes that displays GENRE (uses ID) */
 router.get('/genre/create', genre_controller.genre_create_get);
 
+/* POST request for creating Genre.*/
+router.post('/genre/create', genre_controller.genre_create_post);
+
 
