@@ -88,5 +88,10 @@ router.get('/genre/:id', genre_controller.genre_detail);
 /* GET request for list of Genres. */
 router.get('/genres', genre_controller.genre_list);
 
+/// TRACK ROUTES ///
+
+/* GET request for creating Track. Note this must come before routes that display Track (uses ID). */
+router.get('/track/create', track_controller.track_create_get);
+
 
 
