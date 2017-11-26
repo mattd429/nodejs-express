@@ -32,3 +32,6 @@ router.post('/album/:id/update', album_controller.album_update_post);
 
 /* GET request for one Album. */
 router.get('/album/:id', album_controller.album_detail);
+
+/* GET request for list of all Albums. */
+router.get('/albums', album_contoller.album_list);
