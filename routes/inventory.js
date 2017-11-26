@@ -111,3 +111,6 @@ router.post('/track/:id/update', track_controller.track_update_post);
 /* GET request for one TRACK. */
 router.get('/track/:id'. track_controller.track_detail);
 
+/* GET request for list of Tracks. */
+router.get('/tracks', track_controller.track_list);
+
