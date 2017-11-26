@@ -35,3 +35,12 @@ router.get('/album/:id', album_controller.album_detail);
 
 /* GET request for list of all Albums. */
 router.get('/albums', album_contoller.album_list);
+
+/// ARTIST ROUTES ///
+
+/* GET request for creating Artist. NOTE this must come before route for id (ie display artist) */
+router.get('/artist/create', artist_controller.artist_create_get);
+
+/* POST request for creating Artist. */
+router.post('/artist/create', artist_controller.artist_create_)
+
