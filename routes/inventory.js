@@ -53,3 +53,6 @@ router.post('/artist/:id/delete', artist_controller.artist_delete_post);
 /* GET request for updating Artist. */
 router.get('/artist/:id/update', artist_controller.artist_update_get);
 
+/* POST request for updating Artist. */
+router.post('/artist/:id/update', artist_controller.artist_update_post);
+
