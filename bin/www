@@ -7,3 +7,10 @@
 var app = require('../app');
 var debug = require('debug')('nodejs-express');
 var http = require('http');
+
+/**
+  * Get port from enviroment and store in Express.
+  */
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
