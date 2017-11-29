@@ -12,14 +12,18 @@ exports.index = function(req, res) {
 
   async.parallel({
       album_count: function(callback) {
-            Album.count(callback);
+           Album.count(callback);
       },
       track_count: function(callback) {
-            Track.count(callback);
+           Track.count(callback);
       },
       track_number_count: function(callback) {
-            //Track.count({status}) - need to figure this out...How to display Track number count for albums.
+           //Track.count({status}) - need to figure this out...How to display Track number count for albums.
       },
+      artist_count: function(callback) {
+           Artist.count(callback);
+      },
+      
   })
 };
 
