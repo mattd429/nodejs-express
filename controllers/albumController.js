@@ -5,6 +5,9 @@ var Track = require('../models/track');
 
 var async = require('async');
 
+// add async to the index...
+exports.index = function('async')
+
 // Display list of all albums
 exports.album_list = function(req, res) {
     res.send('NOT IMPLEMENTED: album list');
