@@ -3,9 +3,7 @@ var Artist = require('../models/artist');
 var Genre = require('../models/genre');
 var Track = require('../models/track');
 
-exports.index = function(req, res) {
-    res.send('NOT IMPLEMENTED: Site Home Page');
-};
+var async = require('async')
 
 // Display list of all albums
 exports.album_list = function(req, res) {
