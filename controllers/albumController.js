@@ -17,7 +17,7 @@ exports.index = function(req, res) {
       track_count: function(callback) {
             Track.count(callback);
       },
-      track_number_count(callback) {
+      track_number_count: function(callback) {
             //Track.count({status}) - need to figure this out...How to display Track number count for albums.
       },
   })
