@@ -23,7 +23,9 @@ exports.index = function(req, res) {
       artist_count: function(callback) {
            Artist.count(callback);
       },
-      
+      genre_count: function(callback) {
+           Genre.count(callback);
+      },
   })
 };
 
