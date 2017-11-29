@@ -26,6 +26,8 @@ exports.index = function(req, res) {
       genre_count: function(callback) {
            Genre.count(callback);
       },
+  },  function(err, results) {
+        res.render('')
   })
 };
 
