@@ -10,6 +10,11 @@ exports.index = function('async');
 
 exports.index = function(req, res) {
 
+  async.parallel({
+      album_count: function(callback) {
+            Album.count(callback);
+      },
+  })
 };
 
 // Display list of all albums
