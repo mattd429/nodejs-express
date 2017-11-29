@@ -27,8 +27,9 @@ exports.index = function(req, res) {
            Genre.count(callback);
       },
   },  function(err, results) {
-        res.render('')
-  })
+        res.render('index', {title: 'Music Library Home', error: err, data: results});
+  });
+  
 };
 
 // Display list of all albums
