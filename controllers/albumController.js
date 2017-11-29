@@ -6,7 +6,11 @@ var Track = require('../models/track');
 var async = require('async');
 
 // add async to the index...
-exports.index = function('async')
+exports.index = function('async');
+
+exports.index = function(req, res) {
+
+};
 
 // Display list of all albums
 exports.album_list = function(req, res) {
