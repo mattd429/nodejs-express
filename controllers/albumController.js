@@ -33,8 +33,16 @@ exports.index = function(req, res) {
 };
 
 // Display list of all albums
-exports.album_list = function(req, res) {
-    res.send('NOT IMPLEMENTED: album list');
+exports.album_list = function(req, res, next) {
+  
+  Album.find({}, 'title artist')
+    .populate('artist')
+    .exec(function (err, list_albums) {
+      if (err) {return next(err); }
+      //Successful, so render...
+      res.render('album_list', { title: 'Album List', album_list: list_albums });
+  });
+  
 };
 
 // Display detail page for a specific album
