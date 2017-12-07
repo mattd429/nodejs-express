@@ -2,8 +2,15 @@
 var Track = require('../models/track');
 
 // Display list of all Tracks
-exports.tracks_list = function(req, res) {
-    res.send('NOT IMPLEMENTED: Track list');
+exports.tracks_list = function(req, res, next) {
+    
+    Track.find()
+      .populate('album')
+      .exec(function (err, list_track) {
+        if (err) { return next(err); }
+        // Successful, so render
+        res.render('track_list', { title: 'Track', track_list: list_track });
+    });
 };
 
 // Display track detail page for a specific Track
