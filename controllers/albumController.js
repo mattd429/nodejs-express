@@ -34,7 +34,7 @@ exports.index = function(req, res) {
 
 // Display list of all albums
 exports.album_list = function(req, res, next) {
-  
+  // find title, artist && populate w/ artist
   Album.find({}, 'title artist')
     .populate('artist')
     .exec(function (err, list_albums) {
