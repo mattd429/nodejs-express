@@ -98,3 +98,8 @@ Since it is not globally installed we can not launch from CLI(unless we add the 
   },
 ```
 Now we can start the server in almost the exact same way as before, but with the `"devstart"` command
+
+```
+DEBUG=project-name:* npm run devstart
+```
+
