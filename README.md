@@ -90,3 +90,10 @@ Check out your project's **package.json** file.
 ```
 
 Since it is not globally installed we can not launch from CLI(unless we add the path), we call the NPM script, since NPM knows about the installed packages. Just fine the `scripts` section in your `package.json`, the scripts will have one line that starts with `"start"`. Update the scripts by adding `"devstart"`:
+
+```json
+"scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
+  },
+```
