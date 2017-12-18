@@ -33,3 +33,5 @@ The dependecies include the express package and the package for our selected vie
   - [debug](https://www.npmjs.com/package/debug): A tiny node debugging utility modeled after node core's debugging technique.
   - [morgan](https://www.npmjs.com/package/morgan): An HTTP request logger middleware for node.
   - [serve-favicon](https://www.npmjs.com/package/serve-favicon): Node middleware for serving a [favicon](https://en.wikipedia.org/wiki/Favicon) (This is the icon used to represent the site inside the browser tab, bookmarks, etc.)
+  
+The scripts section defines a "start" script, which is what we are invoking when we call `npm start` to start the server. From the script definition you can see that this actually starts the JavaScript file **./bin/www** with node. It also defines a "devstart" script, which we invoke when calling npm run devstart instead. This starts the same **./bin/www** file, but with nodemon rather than node.
