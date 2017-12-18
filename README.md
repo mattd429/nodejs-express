@@ -75,3 +75,7 @@ GET / 200 288.474 ms - 170
 GET /stylesheets/style.css 200 5.799 ms - 111
 GET /favicon.ico 404 34.134 ms - 1335
 ```
+
+By default when you make changes to Express website they are not available until after a restart of the server(which is a bummer).  There is a toold you may want to use while in dev mode which is called [nodemon](https://github.com/remy/nodemon), our [contributors](https://github.com/remy/nodemon/blob/master/.github/CONTRIBUTING.md).  You usually want to install locally as a dev dependency.
+
+`npm install --save-dev nodemon`
