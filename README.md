@@ -97,3 +97,4 @@ Since it is not globally installed we can not launch from CLI(unless we add the 
     "devstart": "nodemon ./bin/www"
   },
 ```
+Now we can start the server in almost the exact same way as before, but with the `"devstart"` command
