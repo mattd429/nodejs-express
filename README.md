@@ -104,3 +104,6 @@ DEBUG=project-name:* npm run devstart
 ```
 
 now we can edit files and the server will restart or we can type `rs` on the command prompt anytime. You will still need to reload the browser to refresh the page.
+
+
+For more information please check out the [documentation](https://github.com/mattd429/nodejs-express/tree/master/docs) section.
