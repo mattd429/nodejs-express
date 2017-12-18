@@ -39,3 +39,11 @@ create : nodejs-express
    run the app:
      > DEBUG=nodejs-express:* npm start
 ```
+
+At the end of the output generator provides instructions on how you install dependencies(list in the `package.json` file) and then how to run the application.
+
+1. First install the dependencies(the `install` command will get the dependency packages listed in the project's package.json file)
+```
+cd project-name
+npm install
+```
