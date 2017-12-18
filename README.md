@@ -57,3 +57,21 @@ SET DEBUG=project-name:* & npm start
 ```
 
 - on Mac OS
+
+```
+DEBUG=project-name:* npm start
+```
+
+3. then load [http://localhost:3000](http://127.0.0.1:3000/)
+
+```
+>DEBUG=nodejs-express:* npm start
+
+> nodejs-expressl@0.0.0 start D:\nodejs-express
+> node ./bin/www
+
+  nodejs-express:server Listening on port 3000 +0ms
+GET / 200 288.474 ms - 170
+GET /stylesheets/style.css 200 5.799 ms - 111
+GET /favicon.ico 404 34.134 ms - 1335
+```
