@@ -42,3 +42,6 @@ The scripts section defines a "start" script, which is what we are invoking when
     "devstart": "nodemon ./bin/www"
   },
   ```
+### www file
+
+The file **/bin/www** is the application entry point! The very first thing this does is `require()` the "real" application entry point(**app.js**, in the project root)that sets up and returns the [express()](http://expressjs.com/en/api.html) application object.
