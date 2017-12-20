@@ -99,3 +99,4 @@ app.set('views', path.join(__dirname, 'view'));
 // setting the views engine to 'pug'
 app.set('views engine', 'pug');
 ```
+The next set of functions call `app.use()` to add the *middleware* libraries into the request handling chain. in addition to the 3rd party libraries we imported previously, we use the `Express.static` middleware to get *Express* to serve all the static files in the directory **/public** in the project root.
