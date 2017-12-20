@@ -58,3 +58,8 @@ var app = require('../app');
 **Note!!**: `require()` is a global node function that is used to import modules into the current file.
 
 The remainder of the code in the `www` file sets up a node HTTP server with `app` set to a specific port (defined in an enviroment variable or 3000 if the varible isn't defined), and starts listening and reporting server errors and connections.  Everything is this file is a **"boilerplate"**
+
+### app.js
+
+This file creates an `express` application object(named `app`, by convention), sets up the application with various settings and middleware, and then exports the app from module.  Code below shows just the parts of the file that create and export the app object:
+
