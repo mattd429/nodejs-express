@@ -63,3 +63,9 @@ The remainder of the code in the `www` file sets up a node HTTP server with `app
 
 This file creates an `express` application object(named `app`, by convention), sets up the application with various settings and middleware, and then exports the app from module.  Code below shows just the parts of the file that create and export the app object:
 
+```javascript
+var express = require('express');
+var app = express();
+...
+module.exports = app;
+```
