@@ -81,4 +81,9 @@ var logger = require('logger');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 ```
-Then we `require()` modules from our routes directory.  These modules/files contain code for handling particular sets of related "routes"(URL paths).  when we extend the skeleton application, for  example to list all books in the library, we will add a new file for dealing with book-realated routes.
+Then we `require()` modules from our routes directory.  These modules/files contain code for handling particular sets of related "routes"(URL paths).  when we extend the skeleton application, for  example to list all albums in the library, we will add a new file for dealing with album-realated routes.
+
+```javascript
+var index = require('./routes/index');
+var users = require('./routes/users');
+```
