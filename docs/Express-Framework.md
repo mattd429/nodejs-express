@@ -55,3 +55,6 @@ The file **/bin/www** is the application entry point! The very first thing this 
  
 var app = require('../app');
 ```
+**Note!!**: `require()` is a global node function that is used to import modules into the current file.
+
+The remainder of the code in the `www` file sets up a node HTTP server with `app` set to a specific port (defined in an enviroment variable or 3000 if the varible isn't defined), and starts listening and reporting server errors and connections.  Everything is this file is a **"boilerplate"**
