@@ -100,3 +100,7 @@ app.set('views', path.join(__dirname, 'view'));
 app.set('views engine', 'pug');
 ```
 The next set of functions call `app.use()` to add the *middleware* libraries into the request handling chain. in addition to the 3rd party libraries we imported previously, we use the `Express.static` middleware to get *Express* to serve all the static files in the directory **/public** in the project root.
+
+## bodyParser.json([options]) 
+
+returns middleware that only parses `json` and only looks at requests where the `Content-Type` header matches the `type` option.  This parse accepts any Unicode encoding of the bdoy and supports automatic inflation of [gzip](https://en.wikipedia.org/wiki/Gzip) and [deflate](https://en.wikipedia.org/wiki/DEFLATE)
