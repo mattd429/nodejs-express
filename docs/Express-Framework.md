@@ -69,3 +69,6 @@ var app = express();
 ...
 module.exports = app;
 ```
+the **www** entry point file above, is it this `module.exports` object that is supplied to the caller when this file is imported.
+
+in our **app.js** file we first have import some useful node libraries into the file using `require()`, inclduing express, server-favicon, morgan, cookie-parser and body-parser that we previously downloaded for our applications using NPM; and path, which is a core Node library for parsing file and directory paths.
