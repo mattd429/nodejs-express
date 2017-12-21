@@ -104,3 +104,8 @@ The next set of functions call `app.use()` to add the *middleware* libraries int
 ## bodyParser.json([options]) 
 
 returns middleware that only parses `json` and only looks at requests where the `Content-Type` header matches the `type` option.  This parse accepts any Unicode encoding of the bdoy and supports automatic inflation of [gzip](https://en.wikipedia.org/wiki/Gzip) and [deflate](https://en.wikipedia.org/wiki/DEFLATE)
+
+### bodyParser.urlencoded([options])
+
+same as above. 
+`extended` options allows to choose between parsing the URL-encoded data with the `querystring` library when `false`.
