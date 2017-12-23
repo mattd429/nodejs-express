@@ -125,6 +125,7 @@ Now that all the other middleware is set up, we add our(previously imported) rou
 app.use('/', index);
 app.user('/users', users);
 ```
+The last middleware in the file adds handler methods for errors HTTP 404 responses.
 
 ```Javascript
 // catch 404 and forward to error handler
