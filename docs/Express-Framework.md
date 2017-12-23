@@ -121,6 +121,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 ```
 Now that all the other middleware is set up, we add our(previously imported) route-handling code to the request handling chain. The imported code will define particular routes for the different parts of the site:
 
+```javascript
+app.use('/', index);
+app.user('/users', users);
+```
+
 ```Javascript
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
