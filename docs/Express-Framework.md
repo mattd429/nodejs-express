@@ -127,6 +127,10 @@ app.user('/users', users);
 ```
 The last middleware in the file adds handler methods for errors HTTP 404 responses.
 
+### res.locals
+
+An object that contains response local variable scoped to the request, and therefor available only to the views(s) rendering during that request / response cycle(if any),
+
 ```Javascript
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
