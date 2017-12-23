@@ -110,6 +110,16 @@ returns middleware that only parses `json` and only looks at requests where the 
 same as above. 
 `extended` options allows to choose between parsing the URL-encoded data with the `querystring` library when `false`.
 
+```javascript
+// uncomment after placing your favicon in /public
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+```
+
 ```Javascript
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
