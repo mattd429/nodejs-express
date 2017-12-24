@@ -150,3 +150,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 ```
+The Express application object(app) is not full configured
