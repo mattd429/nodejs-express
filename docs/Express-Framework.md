@@ -173,3 +173,5 @@ module.exports = router;
 ```
 
 The route defines a callback that will be invoked whenever a HTTP `GET` request with the correct pattern is detected. The matching pattern is the route specified when the module is imported `('/users')` plus whatever is defined in this file `('/')`. in other words, this route will be used when an URL of `/users/` is recieved.
+
+Run the server at [http://localhost:3000/users/](http://127.0.0.1:3000/users)
