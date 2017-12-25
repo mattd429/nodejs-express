@@ -179,3 +179,10 @@ Run the server at [http://localhost:3000/users/](http://127.0.0.1:3000/users)
 ### Views(templates)
 
 the views(templates) are stored in the **/views** directory(as specified in **app.js**) and given are given the file extension **.pug**. The method [Response.render()](http://expressjs.com/en/4x/api.html#res.render) is used to render a specified templates along with the values of named variables passed in an object, and then send the result as a response. In the code below from **routes/index.js** you can see how that route renders a response using the template "index" passing the template variable "title".
+
+```javascript
+/* GET home page. */
+router.get('/', function(req, res) {
+  res.render('index', {title: 'Express'})
+});
+```
