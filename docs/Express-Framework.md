@@ -175,3 +175,7 @@ module.exports = router;
 The route defines a callback that will be invoked whenever a HTTP `GET` request with the correct pattern is detected. The matching pattern is the route specified when the module is imported `('/users')` plus whatever is defined in this file `('/')`. in other words, this route will be used when an URL of `/users/` is recieved.
 
 Run the server at [http://localhost:3000/users/](http://127.0.0.1:3000/users)
+
+### Views(templates)
+
+the views(templates) are stored in the **/views** directory(as specified in **app.js**) and given are given the file extension **.pug**. The method [Response.render()](http://expressjs.com/en/4x/api.html#res.render) is used to render a specified templates along with the values of named variables passed in an object, and then send the result as a response. In the code below from **routes/index.js** you can see how that route renders a response using the template "index" passing the template variable "title".
