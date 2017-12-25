@@ -150,4 +150,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 ```
-The Express application object(app) is not full configured
+The Express application object(app) is not full configured.  The last step is to add it to the module exports(this is what allows it to be imported by **/bin/www**).
+
+
