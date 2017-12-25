@@ -186,3 +186,5 @@ router.get('/', function(req, res) {
   res.render('index', {title: 'Express'})
 });
 ```
+
+The corresponding template for the above route is give below (index.pug). the `title` variable (with value `Express`) is inserted where specified in the template.
