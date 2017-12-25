@@ -155,3 +155,7 @@ The Express application object(app) is not full configured.  The last step is to
 ```
 module.exports = app;
 ```
+
+### Routes
+
+The route file **/routes/users.js** is shown below(route files share a similiar structure, so we don't need to also show **index.js**). First it loads the express module, and uses it to get and `express.Router` object.  Then it specifies a route on that object, and lastly exports the router from the module(this is what allows the file to be imported into **app.js**).
