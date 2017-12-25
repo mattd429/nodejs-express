@@ -8,3 +8,5 @@ The Main things we need to create are:
 ![alt text](https://mdn.mozillademos.org/files/14456/MVC%20Express.png)
 
 We might have pages to show lists and detail information for books, genres, authors and bookinstances, along with pages to create, update, and delete records. Since that is alot of document in one article, we will set up our rotues and controllers to return "dummmy" content.
+
+The first section will provide a brief "primer" on how to use the Express [Router](http://expressjs.com/en/4x/api.html#router) middleware.
