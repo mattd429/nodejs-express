@@ -63,3 +63,4 @@ router.get('/about', function(req, res) {
   res.send('About this wiki');
 });
 ```
+The callback takes three arguments (usually named shown:`req`,`res`,`next`), that will contain the HTTP Request object, HTTP response, and the *next* function in the Middleware chain.
