@@ -64,3 +64,6 @@ router.get('/about', function(req, res) {
 });
 ```
 The callback takes three arguments (usually named shown:`req`,`res`,`next`), that will contain the HTTP Request object, HTTP response, and the *next* function in the Middleware chain.
+
+> **Note**: Router functions are [Express middleware](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction#Using_middleware), which means that they must either complete (respond to) the request or call the next function in the chain. In the case above we complete the request, so the `next` argument is not actually used.
+> 
