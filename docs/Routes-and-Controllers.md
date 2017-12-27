@@ -21,4 +21,7 @@ There are alot of ways to create routes, but here we will use [express.Router](h
 
 The code below provides a concreate example of how e can create a route module and then use it in *Express* application
 
+First, we create routes for a wiki in a module **wiki.js**. The code first imports the Express application object, uses it to get a `Router` object and then adds a couple of routes to it using the `get()` method. Last of all the module exports the `Router` object.
+
+
 
