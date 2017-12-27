@@ -52,4 +52,4 @@ var wiki = require('./wiki.js');
 // ...
 app.use('/wiki', wiki);
 ```
-
+The two routes defined in our wiki route module are then accessible from `/wiki/` and `/wiki/about/`
