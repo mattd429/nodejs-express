@@ -58,3 +58,8 @@ The two routes defined in our wiki route module are then accessible from `/wiki/
 
 Our module above defines a couple of typical route functions. The "about" route(reproduced below) is define using `Route.get()` method, which responds only to HTTP GET requests. The first argument to this method is the URL path while the second is a callback function that will be invoked if an HTTP GET request with the path is receieved.
 
+```javascript
+router.get('/about', function(req, res) {
+  res.send('About this wiki');
+});
+```
