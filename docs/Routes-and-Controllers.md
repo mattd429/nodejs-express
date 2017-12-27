@@ -23,5 +23,21 @@ The code below provides a concreate example of how e can create a route module a
 
 First, we create routes for a wiki in a module **wiki.js**. The code first imports the Express application object, uses it to get a `Router` object and then adds a couple of routes to it using the `get()` method. Last of all the module exports the `Router` object.
 
+```javascript
+// wiki.js - Wiki routes module
 
+var express = require('express');
+var router = express.Router();
 
+// Home page router
+router.get('/', function (req, res) {
+  res.send('Wiki home page');
+});
+
+// About page route
+router.get('/about', function(req, res) {
+  res.send('About this wiki');
+});
+
+module.exports = router;
+```
