@@ -41,3 +41,5 @@ router.get('/about', function(req, res) {
 
 module.exports = router;
 ```
+
+**Note**: above we are defining our route handler callbacks directly in the router functions. In the nodejs-express we'll define these callbacks in a seperate controller module.
