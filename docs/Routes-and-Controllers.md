@@ -45,3 +45,11 @@ module.exports = router;
 **Note**: above we are defining our route handler callbacks directly in the router functions. In the nodejs-express we'll define these callbacks in a seperate controller module.
 
 To use the router in our main app file we first `require()` the route module **wiki.js**. We then call `use()` on the *Express* application to add the Router to the middleware handling path, specifying an URL path of 'wiki'.
+
+This below will be in our app file.
+```javascript
+var wiki = require('./wiki.js');
+// ...
+app.use('/wiki', wiki);
+```
+
