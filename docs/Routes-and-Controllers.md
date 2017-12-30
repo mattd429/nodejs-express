@@ -93,3 +93,4 @@ The route paths define the endpoints at which requests can be made. The examples
 Route paths can also be string patterns. String patterns use a subset of regular expression syntax to define patterns of endpoints that will be matched. The subset is listed below(not that the hypen `-` and the dot `.` are interpreted literally by string-based paths):
 
 - ?: The endpoint must have 0 or more of the preceding character. e.g. a route path of `/ab?cd` will match endpoints `acd`,`abcd`, `abbcd`, etc.
+- +: The endpoint must have 1 or more of the preceding character. E.g. a route path of `ab+cd/` will match endpoints `abcd`, `abbcd`, `abbbcd`, and so on.
