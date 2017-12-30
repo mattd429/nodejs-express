@@ -80,3 +80,9 @@ The `Router` alsi provides route methods for all the other HTTP verbs, that are 
 
 for example, the code below behaves just like the previous `/about` route, but only responds to HTTP POST requests.
 
+```javascript
+router.post('/about', function(req, res) {
+  res.send('About this wiki');
+});
+```
+
