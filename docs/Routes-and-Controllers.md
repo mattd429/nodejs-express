@@ -86,3 +86,6 @@ router.post('/about', function(req, res) {
 });
 ```
 
+#### Route paths
+
+The route paths define the endpoints at which requests can be made. The examples we've seen so far have just been strings, and are used exactly as written: `'/'`,`'/about'`,`'/any-randon.path'`.
