@@ -69,3 +69,8 @@ The callback takes three arguments (usually named shown:`req`,`res`,`next`), tha
 > 
 
 The callback function here calls [send()](https://expressjs.com/en/4x/api.html#res.send) on the response to return the string "About this wiki" when we recieve a GET request with the path `/about`. There are a [number of other response methods](https://expressjs.com/en/guide/routing.html#response-methods) for ending the request/response cycle. For example, you could call [res.json()](https://expressjs.com/en/4x/api.html#res.json) to send a JSON response or [res.sendFile()](https://expressjs.com/en/4x/api.html#res.sendFile) to send a file. The response method that we'll be using most often as we build up the library is [render()](https://expressjs.com/en/4x/api.html#res.render), which creates and returns HTML files using templates and data.
+
+### HTTP verbs
+
+The example routes above use the `Router.get()` method to respond to HTTP GET requests with a certain path.
+
