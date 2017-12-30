@@ -91,3 +91,5 @@ router.post('/about', function(req, res) {
 The route paths define the endpoints at which requests can be made. The examples we've seen so far have just been strings, and are used exactly as written: `'/'`,`'/about'`,`'/any-randon.path'`.
 
 Route paths can also be string patterns. String patterns use a subset of regular expression syntax to define patterns of endpoints that will be matched. The subset is listed below(not that the hypen `-` and the dot `.` are interpreted literally by string-based paths):
+
+- ?: The endpoint must have 0 or more of the preceding character. e.g. a route path of `/ab?cd` will match endpoints `acd`,`abcd`, `abbcd`, etc.
