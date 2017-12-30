@@ -95,3 +95,4 @@ Route paths can also be string patterns. String patterns use a subset of regular
 - ?: The endpoint must have 0 or more of the preceding character. e.g. a route path of `/ab?cd` will match endpoints `acd`,`abcd`, `abbcd`, etc.
 - +: The endpoint must have 1 or more of the preceding character. E.g. a route path of `ab+cd/` will match endpoints `abcd`, `abbcd`, `abbbcd`, and so on.
 - *: The endpoint may have an arbitrary string the * characater is placed.  E.g. a route path of `ab*cd` will match endpoints `abcd`,`abXcd`, `abSOMErandomTEXTcd`, and so on.
+- (): Grouping match on a set of characters to perform another operation on. E.g `/ab(cd)?e` will perform a ? match (cd) - it will match `abe`,`abcde`,`abcdcde`, and so on.
