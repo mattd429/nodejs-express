@@ -96,3 +96,5 @@ Route paths can also be string patterns. String patterns use a subset of regular
 - +: The endpoint must have 1 or more of the preceding character. E.g. a route path of `ab+cd/` will match endpoints `abcd`, `abbcd`, `abbbcd`, and so on.
 - *: The endpoint may have an arbitrary string the * characater is placed.  E.g. a route path of `ab*cd` will match endpoints `abcd`,`abXcd`, `abSOMErandomTEXTcd`, and so on.
 - (): Grouping match on a set of characters to perform another operation on. E.g `/ab(cd)?e` will perform a ? match (cd) - it will match `abe`,`abcde`,`abcdcde`, and so on.
+
+The route paths can also be JavaScript [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). For example, the route path below will match `catfish` and `dogfish`, but not `catflap`, `catfishhead`, and so on. Note that the path for a regular expression uses regular expression syntax(it is not a quoted strings as in the previous cases).
