@@ -106,3 +106,6 @@ app.get(/.*fish$/, function (req, res) {
 ```
 >**NOTE**: Most of our routes for the nodejs-express will simply use strings and not string patterns and regular expressions.
 
+### Route parameters
+
+Route parameters are named *URL segments* used to capture at their position in the URL. The named segments are prefixed with a colon and then the name(e.g. `/:your_parameter_name/`. The captured values are stored in the `req.params` object using the parameter names as keys (e.g. `req.params.your_parameter_name`).
