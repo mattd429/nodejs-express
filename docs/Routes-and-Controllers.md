@@ -104,3 +104,5 @@ app.get(/.*fish$/, function (req, res) {
   ...
 });
 ```
+>**NOTE**: Most of our routes for the nodejs-express will simply use strings and not string patterns and regular expressions.
+
