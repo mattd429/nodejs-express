@@ -112,3 +112,10 @@ Route parameters are named *URL segments* used to capture at their position in t
 
 for example, consider a URL encoded to contain information about users and albums:
 `http://localhost:3000/users/34/albums/8989`. We can extract information as shown below, with the `userId` and `albumId` path parameters:
+```javascript
+app.get('/users/:userId/albums/:albumId', function (req, res) {
+  // Access userId via: req.params.userId
+  // Access albumId via: req.params.albumId
+  res.send(req.params);
+});
+```
