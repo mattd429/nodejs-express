@@ -141,23 +141,23 @@ function createAlbums(cb) {
     async.parallel([
         function(callback) {
           albumCreate('The Fame', artists[0], 'Is the debut studio album by American singer Lady Gaga. It was released on August 19, 2008, by Interscope Records. After joining Kon Live Distribution and Cherrytree Records in 2008, Gaga began working on the album with different producers, primarily RedOne, Martin Kierszenbaum and Rob Fusari. Musically, The Fame is an electropop, synth-pop, and dance-pop album that has displays from music from the 1980s',
-          '602517664890', [genres[0],], callback);
+          '602517664890', genres[0], callback);
         },
         function(callback) {
           albumCreate('Joanne', artists[0], 'is the fifth studio album by American singer Lady Gaga. It was released on October 21, 2016, by Streamline and Interscope Records. Gaga collaborated with several producers on the album, including Mark Ronson, Jeff Bhasker, BloodPop and RedOne, and co-produced the majority of the material. The music of Joanne features "stripped-down" soft rock and dance-pop styles in order to emphasize the singer\'s vocal abilities'
-          '602557186437', [genres[0],], callback);
+          '602557186437', genres[0], callback);
         },
         function(callback) {
           albumCreate('The Life of Pablo', artists[1], 'is the seventh solo studio album by American rapper Kanye West (eighth overall). It was released on February 14, 2016, by GOOD Music and Def Jam Recordings. Recording sessions took place from 2013 to 2016, in Italy, Mexico, Canada and the United States.'
-          false, [genres[1],], callback)
+          false, genres[1], callback)
         },
         function(callback) {
           albumCreate('Giant Steps', artists[2], 'is the fifth studio album by jazz musician John Coltrane as leader, released in 1960 on Atlantic Records, catalogue SD 1311. His first album for his new label Atlantic, it is the breakthrough album for Coltrane as a leader, and many of its tracks have become practice templates for jazz saxophonists. In 2004, it was one of fifty recordings chosen that year by the Library of Congress to be added to the National Recording Registry.'
-          '075678133725', [genres[2],], callback);
+          '075678133725', genres[2], callback);
         },
         function(callback) {
           albumCreate('Darkness and Light', artists[3], 'is the fifth studio album by American singer John Legend. The album was released on December 2, 2016 by GOOD Music and Columbia Records. It was produced by Blake Mills and features guest appearances from Chance the Rapper, Brittany Howard, and Miguel. The album is supported by two singles "Love Me Now", and "Penthouse Floor" featuring Chance the Rapper.'
-          '889853795321', [genres[3],], callback);
+          '889853795321', genres[3], callback);
         },
         ]
         // optional callback               
