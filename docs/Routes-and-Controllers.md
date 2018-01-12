@@ -118,5 +118,6 @@ app.get('/users/:userId/albums/:albumId', function (req, res) {
   // Access albumId via: req.params.albumId
   res.send(req.params);
 });
+
 ```
 The names of route parameters must be made up of "word characters" (A-Z, a-z, 0-9, and _).
