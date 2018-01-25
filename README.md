@@ -46,6 +46,7 @@ At the end of the output generator provides instructions on how you install depe
 ```
 cd project-name
 npm install
+
 ```
 
 2. Then run the application
