@@ -16,5 +16,14 @@ TrackSchema
   return '/popular/track' + this._id;
 });
 
+// virtual for track time
+TrackSchema
+  // set trak time format after url property
+  .virtual('track_time')
+  .get(function () {
+    // return the moment of track_time w/ track_number in hour, minute, second
+    return moment(track_number).format('hh:mm:ss');
+})
+
 //export
 module.exports = mongoose.model('Track', TrackSchema);
