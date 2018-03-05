@@ -1,8 +1,9 @@
-var mongoose = require('mongoose');
+const moment = require('moment');
+const mongoose = require('mongoose');
 
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-var TrackSchema = new Schema({
+const TrackSchema = new Schema({
   name: = { type: String, required: true},
   album: {type: Schema.ObjectId, ref: 'Album', required: true},
   rating: {type: Number, required: true, enum:[1, 2, 3, 4, 5], default: 3},
